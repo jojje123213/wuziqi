@@ -23,15 +23,15 @@ def __remove(gobang_board, rc_pos):
     gobang_board[r][c] = const.EMPTY
 
 
-def show_searching_info(depth, rc_pos, alpha, beta, score):  # 展示搜索过程中的信息
-    print("当前为第", const.DEPTH-depth+1, "层，正在搜索", rc_pos)
-    print("α=", alpha, "，β=", beta)
-    if depth >= const.DEPTH:
-        print(rc_pos, "的分数：", score)
-        print("已剪枝", count_pruning, "次")
-        print("human的棋型:", evaluate.count_chess_type_human)
-        print("ai   的棋型:", evaluate.count_chess_type_ai)
-        print()
+def show_searching_info(depth, rc_pos, alpha, beta, score):  # 展示搜索过程中的信息(不需要此处的print)
+#    print("当前为第", const.DEPTH-depth+1, "层，正在搜索", rc_pos)
+ #   print("α=", alpha, "，β=", beta)
+  #  if depth >= const.DEPTH:
+   #     print(rc_pos, "的分数：", score)
+    #    print("已剪枝", count_pruning, "次")
+     #   print("human的棋型:", evaluate.count_chess_type_human)
+      #  print("ai   的棋型:", evaluate.count_chess_type_ai)
+       # print()
 
 
 def update_search_info(string):
