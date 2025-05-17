@@ -16,9 +16,9 @@ def play_turn(human_pos: Tuple[int, int]) -> Tuple[Tuple[int, int], List[List[in
     ai_pos = get_move_ai()
     move(const.AI, ai_pos)
 
-    # 控制台显示
-    print_board(gobang_board)
-
-    #
+    # # 控制台显示（已除去）
+    # print_board(gobang_board)
+    
+    #返回棋盘
     board_copy = [row[:] for row in gobang_board]
     return ai_pos, board_copy
